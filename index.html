@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      body,
-      html {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        margin: 0;
-      }
 
-      #myCanvas {
-        width: 100%;
-        height: 100%;
-        background: black;
-      }
-    </style>
-    <!-- Load the Paper.js library -->
-    <script
-      type="text/javascript"
-      src="node_modules/paper/dist/paper-full.js"
-    ></script>
+<head>
+  <style>
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+    }
 
-    <!-- Load the Howler.js library -->
-    <script src="node_modules/howler/dist/howler.js"></script>
+    #myCanvas {
+      width: 100%;
+      height: 100%;
+      background: black;
+    }
+  </style>
+  <!-- Load the Paper.js library -->
+  <script type="text/javascript" src="./node_modules/paper/dist/paper-full.js"></script>
 
-    <!-- Define inlined PaperScript associate it with myCanvas -->
-    <script type="text/paperscript" canvas="myCanvas">
+  <!-- Load the Howler.js library -->
+  <script src="./node_modules/howler/dist/howler.js"></script>
+
+  <!-- Define inlined PaperScript associate it with myCanvas -->
+  <script type="text/paperscript" canvas="myCanvas">
       //define shape and audio array
       var circles = [];
       var howls = {};
@@ -120,8 +118,10 @@
         }
       }
     </script>
-  </head>
-  <body>
-    <canvas id="myCanvas" resize></canvas>
-  </body>
+</head>
+
+<body>
+  <canvas id="myCanvas" resize></canvas>
+</body>
+
 </html>
